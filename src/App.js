@@ -130,7 +130,9 @@ export default class App extends Component {
       
       <div className="pomodoro-clock">
         <div className="pomodoro-clock-header">
-          <h1 className="pomodoro-clock-header-name">Pomodoro</h1>
+          <h1 className="pomodoro-clock-header-name">
+           Pomodoro
+          </h1>
         </div>
         <div className="container">
         <Settings
@@ -189,7 +191,7 @@ export default class App extends Component {
                 </ul>
 
           </div>
-            
+          <div class="author">Designed and Coded by <a href="https://github.com/abroroo">abroro</a></div>
         </div>
       </div>
     );

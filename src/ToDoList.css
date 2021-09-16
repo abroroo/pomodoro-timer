@@ -7,6 +7,11 @@
     display: flexbox;
     margin-bottom: 50px;
 }
+
+.todoTitle {
+  color: #FDF6F0;
+}
+
 .todoListMain .header input {
     padding: 10px;
     font-size: 16px;

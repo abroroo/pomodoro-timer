@@ -60,11 +60,13 @@ margin-bottom: 50px;
   padding-top: 30px;
   /*left: -50%; */
   height: 100%;
+  padding-bottom: 15px;
 }
 .text-box {
   width: 50%;
   text-align: justify;
   margin: auto;
+  padding-bottom: 20px;
 }
 
 p{
@@ -81,9 +83,19 @@ hr {
   margin-left: 0%;
   border-top: 5px dotted #534C98;
 }
-
-
-
+.author {
+font-size: 15px;
+}
+{
+  animation: wiggle 3s infinite;
+}
+@keyframes wiggle{
+  0%{transform: rotate(0deg)}
+  7%{transform: rotate(-2deg)}
+  20%{transform: rotate(2deg)}
+  45%{transform: rotate(0deg)}
+  100%{transform: rotate(0deg)}
+}
 
 
 

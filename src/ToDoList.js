@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./ToDoList.css";
 import TodoItems from "./TodoItems";
 import { FaPlus } from 'react-icons/fa';
+import Typical from 'react-typical'
+
 
 export default class TodoList extends Component {
     constructor(props) {
@@ -50,8 +52,14 @@ export default class TodoList extends Component {
     return (
       <div className="todoListMain">
         <div className="header">
+        <Typical
+        steps={['To Do List', 500, 'create new tasks', 1000, 'once finished', 500, 'click on task to Delete', 1000]}
+        loop={Infinity}
+        wrapper="p"
+        className="todoTitle"
+      />
           <form onSubmit={this.addItem}>
-            <input ref={(a) => this._inputElement = a} placeholder="Enter task">
+            <input ref={(a) => this._inputElement = a} placeholder="Type here">
             </input>
             <button type="submit"><FaPlus /></button>
           </form>
