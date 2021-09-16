@@ -53,7 +53,7 @@ export default class TodoList extends Component {
       <div className="todoListMain">
         <div className="header">
         <Typical
-        steps={['Below is To Do List', 500, 'create new tasks', 1000, 'once finished', 500, 'click on task to Delete', 1000]}
+        steps={['below is To Do List', 500, 'create new task', 1000, 'once finished', 500, 'click on task to Delete', 1000]}
         loop={Infinity}
         wrapper="p"
         className="todoTitle"
