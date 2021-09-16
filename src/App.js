@@ -3,7 +3,7 @@ import Settings from './Settings';
 import Times from './Times';
 import Controller from './Controller';
 import './App.css';
-
+import TodoList from "./TodoList";
 
 export default class App extends Component {
   constructor(props) {
@@ -156,6 +156,8 @@ export default class App extends Component {
 
         <audio id="beep" preload="auto" src="https://goo.gl/65cBl1" ref={this.audioBeep}></audio>
        </div>
+
+      <TodoList />
       
          <div className="body-text">
           <div className="text-box">
