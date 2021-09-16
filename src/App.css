@@ -90,13 +90,14 @@ hr {
 font-size: 15px;
 }
 .timer-icon {
-  animation: wiggle 10s infinite;
+  
+  animation: wiggle 15s infinite;
 }
 @keyframes wiggle{
-  0%{transform: rotate(0deg)}
-  7%{transform: rotate(-30deg)}
-  20%{transform: rotate(30deg)}
-  45%{transform: rotate(0deg)}
+  0%{transform: rotate(-0deg)}
+  2%{transform: rotate(-30deg)}
+  7%{transform: rotate(30deg)}
+  12%{transform: rotate(0deg)}
   100%{transform: rotate(0deg)}
 }
 
