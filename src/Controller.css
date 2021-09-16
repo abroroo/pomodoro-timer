@@ -1,0 +1,31 @@
+.controller {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .controller button {
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none; /* 1px solid #534C98;*/
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FDF6F0;
+    border-radius: 5px;
+    outline: none;
+    width: 85px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    margin: 5px;
+    text-transform: uppercase;
+  }
+  
+  .controller button:hover {
+    cursor: pointer;
+    background-color: #534C98;
+  }

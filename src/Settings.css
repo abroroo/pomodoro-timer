@@ -1,0 +1,57 @@
+.settings {
+   display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    margin-top: 5px;
+  }
+  
+  .settings-section {
+    text-align: center;
+  }
+  
+.settings-section label{
+  font-size: 1rem;
+}
+
+ .settings-section button {
+    font-size: 1.2rem;
+    border: none;  /*1px solid #534C98;*/
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FDF6F0;
+    border-radius: 5px;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  
+  .settings-section button:not(.disable):hover {
+    cursor: pointer;
+    background-color: #534C98;
+  }
+  
+  .settings-section button.disable {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .settings-section span {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    //background-color: #FDF6F0;
+    border-radius: 5px;
+    color: #FDF6F0;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }

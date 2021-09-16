@@ -1,4 +1,107 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 500px;
+  height: 330px;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+width: 35%;
+padding-top: 20px;
+margin-bottom: 50px;
+}
+.pomodoro-clock{
+  justify-content: center;
+  align-items: center;
+}
+.pomodoro-clock-header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pomodoro-clock-header-name {
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  /*background-color: #534C98;*/
+  padding: 0px 0px;
+}
+/*
+.pomodoro-clock-header-name::before {
+  content: '';
+  height: 3px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #FDF6F0;
+  border-bottom: 1px solid #FDF6F0;
+  z-index: -1;
+}
+
+/*@media (min-width: 768px) {
+  .pomodoro-clock {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .pomodoro-clock-header-name::before {
+    top: 50%;
+    left: -50%;
+    width: 200%;
+  }
+}*/
+
+.body-text{
+  background-color: #FDF6F0;
+  color: #272343;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  /*left: -50%; */
+  height: 100%;
+}
+.text-box {
+  width: 50%;
+  text-align: justify;
+  margin: auto;
+}
+
+p{
+  color: #595B83; /*grey;*/
+}
+li {
+  color: #595B83; /*grey;*/
+}
+
+hr {
+  width: 20px;
+  margin-left: 0%;
+  border-top: 5px dotted #534C98;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +139,4 @@
     transform: rotate(360deg);
   }
 }
+*/
