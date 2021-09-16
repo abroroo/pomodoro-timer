@@ -53,8 +53,8 @@ margin-bottom: 50px;
 }*/
 
 .body-text{
-  background-color: #FDF6F0;
-  color: #272343;
+  background-color: white;
+  color: #373331; /*512D6D; 534C98*/
   font-family: 'Varela Round', sans-serif;
   text-align: center;
   padding-top: 30px;
@@ -63,17 +63,19 @@ margin-bottom: 50px;
   padding-bottom: 15px;
 }
 .text-box {
-  width: 50%;
+  width: 45%;
   text-align: justify;
   margin: auto;
   padding-bottom: 20px;
 }
 
 p{
-  color: #595B83; /*grey;*/
+  color: #605A56; /*grey;*/
+  font-size: 18px;
 }
 li {
-  color: #595B83; /*grey;*/
+  color: #605A56; /*grey;*/
+  font-size: 18px;
 }
 h2 {
   margin-bottom: 0px;
@@ -81,18 +83,19 @@ h2 {
 hr {
   width: 20px;
   margin-left: 0%;
-  border-top: 5px dotted #534C98;
+  border-top: 5px dotted #388E3C;
+  margin-bottom: 40px;
 }
 .author {
 font-size: 15px;
 }
-{
-  animation: wiggle 3s infinite;
+.timer-icon {
+  animation: wiggle 10s infinite;
 }
 @keyframes wiggle{
   0%{transform: rotate(0deg)}
-  7%{transform: rotate(-2deg)}
-  20%{transform: rotate(2deg)}
+  7%{transform: rotate(-30deg)}
+  20%{transform: rotate(30deg)}
   45%{transform: rotate(0deg)}
   100%{transform: rotate(0deg)}
 }

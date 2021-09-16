@@ -10,7 +10,7 @@
     font-weight: 700;
     border: none; /* 1px solid #534C98;*/
     background-color: rgba(255, 255, 255, 0.1);
-    color: #FDF6F0;
+    color: #FDF6F0; /*#FDF6F0;*/
     border-radius: 5px;
     outline: none;
     width: 85px;
@@ -27,5 +27,5 @@
   
   .controller button:hover {
     cursor: pointer;
-    background-color: #534C98;
+    background-color: #388E3C;
   }

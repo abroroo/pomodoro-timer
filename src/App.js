@@ -4,6 +4,7 @@ import Times from './Times';
 import Controller from './Controller';
 import './App.css';
 import ToDoList from "./ToDoList";
+import { MdTimer } from "react-icons/md";
 
 export default class App extends Component {
   constructor(props) {
@@ -131,7 +132,7 @@ export default class App extends Component {
       <div className="pomodoro-clock">
         <div className="pomodoro-clock-header">
           <h1 className="pomodoro-clock-header-name">
-           Pomodoro
+           Pomodor<MdTimer className="timer-icon" />
           </h1>
         </div>
         <div className="container">
