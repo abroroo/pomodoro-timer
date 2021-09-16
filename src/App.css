@@ -73,7 +73,9 @@ p{
 li {
   color: #595B83; /*grey;*/
 }
-
+h2 {
+  margin-bottom: 0px;
+}
 hr {
   width: 20px;
   margin-left: 0%;
