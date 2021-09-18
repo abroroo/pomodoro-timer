@@ -55,3 +55,16 @@
     font-size: 1.5rem;
     font-weight: 600;
   }
+
+
+  @media screen and (max-width: 600px) {
+    .settings-section label{
+      font-size: 0.7rem;
+    }
+    .settings-section button {
+      font-size: 0.7rem;
+    }
+    .settings-section span {
+      font-size: 1.3rem;
+    }
+  }

@@ -90,7 +90,6 @@ hr {
 font-size: 15px;
 }
 .timer-icon {
-  
   animation: wiggle 15s infinite;
 }
 @keyframes wiggle{
@@ -105,7 +104,26 @@ font-size: 15px;
 
 
 
-
+/* When Screen gets small*/
+@media screen and (max-width: 600px) {
+  p{
+     /*grey;*/
+    font-size: 14px;
+  }
+  li {
+    /*grey;*/
+    font-size: 14px;
+  }
+  .author {
+    font-size: 13px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h1  {
+      font-size: 25px;
+    }
+}
 
 
 

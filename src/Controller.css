@@ -29,3 +29,13 @@
     cursor: pointer;
     background-color: #388E3C;
   }
+
+
+  @media screen and (max-width: 600px) {
+    .controller button {
+      font-size: 1rem;
+    }
+    .controller {
+      margin-top: 0px;
+    }
+  }
