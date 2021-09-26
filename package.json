@@ -1,6 +1,6 @@
 {
   "name": "pomodoro",
-  "homepage": "https://abroroo.github.io/pomodoro-timer",
+  "homepage": "http://abroroo.github.io/pomodoro-timer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
