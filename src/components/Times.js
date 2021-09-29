@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Times.css';
+import './styles/Times.css';
 
 const formatTime = (timeLeftInSecond) => {
   let minute = Math.floor(timeLeftInSecond / 60);

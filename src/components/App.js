@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Settings from './Settings';
 import Times from './Times';
 import Controller from './Controller';
-import './App.css';
+import './styles/App.css';
 import ToDoList from "./ToDoList";
 import { MdTimer } from "react-icons/md";
 

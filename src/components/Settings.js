@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Settings.css';
+import './styles/Settings.css';
 import { FaPlus } from 'react-icons/fa';
 import { FaMinus } from 'react-icons/fa';
 

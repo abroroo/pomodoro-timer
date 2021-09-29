@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ToDoList.css";
+import "./styles/ToDoList.css";
 import TodoItems from "./TodoItems";
 import { FaPlus } from 'react-icons/fa';
 import Typical from 'react-typical'

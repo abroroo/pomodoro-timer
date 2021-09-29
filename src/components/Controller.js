@@ -1,6 +1,6 @@
   
 import React, { Component } from 'react';
-import './Controller.css';
+import './styles/Controller.css';
 import { FaPlay } from 'react-icons/fa';
 import { FaPause } from 'react-icons/fa';  
 import { FaRedoAlt } from 'react-icons/fa';
