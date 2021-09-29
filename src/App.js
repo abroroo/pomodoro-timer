@@ -157,7 +157,7 @@ export default class App extends Component {
           isStart={this.state.isStart}
         />
 
-        <audio id="beep" preload="auto" src="https://goo.gl/65cBl1" ref={this.audioBeep}></audio>
+        <audio id="beep" preload="auto" src="http://www.peter-weinberg.com/files/1014/8073/6015/BeepSound.wav" ref={this.audioBeep}></audio>
        </div>
 
       <ToDoList />

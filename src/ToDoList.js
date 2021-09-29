@@ -53,13 +53,13 @@ export default class TodoList extends Component {
       <div className="todoListMain">
         <div className="header">
         <Typical
-        steps={['To Do List', 5000, 'create new task', 5000, 'once finished', 5000, 'click on task to Delete', 5000, '']}
-        loop={1}
+        steps={['To Do Tasks', 20000, '']}
+        loop={Infinity}
         wrapper="p"
         className="todoTitle"
       />
           <form onSubmit={this.addItem}>
-            <input ref={(a) => this._inputElement = a} placeholder="Type here">
+            <input ref={(a) => this._inputElement = a} placeholder="...new task">
             </input>
             <button type="submit"><FaPlus /></button>
           </form>

@@ -40,7 +40,7 @@ margin-bottom: 50px;
   z-index: -1;
 }
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
   .pomodoro-clock {
     width: 768px;
     margin: 0 auto;
@@ -105,13 +105,13 @@ font-size: 15px;
 
 
 /* When Screen gets small*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 557px) {
   p{
-     /*grey;*/
+     
     font-size: 14px;
   }
   li {
-    /*grey;*/
+    
     font-size: 14px;
   }
   .author {
@@ -134,7 +134,12 @@ font-size: 15px;
 }
 
 
-
+@media screen and (max-width: 965px) {
+  .container {
+    width: 60%;
+    
+  }
+}
 
 
 
