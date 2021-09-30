@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import { useState } from 'react';
 import Settings from './Settings';
 import Times from './Times';
 import Controller from './Controller';
 import './styles/App.css';
 import ToDoList from "./ToDoList";
 import { MdTimer } from "react-icons/md";
+import Dashboard from './Dashboard/Dashboard';
+import Preferences from './Preferences/Preferences';
+import {BrowserRouter, Route, Switch } from 'react-router-dom';
+import Login from './Login/Login';
 
 export default class App extends Component {
   constructor(props) {
@@ -31,8 +36,7 @@ export default class App extends Component {
     this.phaseControl = this.phaseControl.bind(this);
   }
 
-
-   onIncreaseBreak() {
+     onIncreaseBreak() {
     if (this.state.breakLength < 60 && !this.state.isStart) {
       this.setState({
         breakLength: this.state.breakLength + 1
@@ -126,10 +130,38 @@ export default class App extends Component {
     }
   }
 
+  const [token, setToken] = useState();
+  
+  if (!token) {
+    return <Login setToken={setToken} />
+  }
+
    render() {
+    
     return (
       
+   
       <div className="pomodoro-clock">
+
+        <div className = "wrapper">
+          
+          <BrowserRouter>
+          
+          <Switch>
+            <Route path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route path="/preferences">
+              <Preferences />
+            </Route>
+          </Switch>
+          </BrowserRouter>
+
+
+        </div>
+
+
+
         <div className="pomodoro-clock-header">
           <h1 className="pomodoro-clock-header-name">
            Pomodor<MdTimer className="timer-icon" />
