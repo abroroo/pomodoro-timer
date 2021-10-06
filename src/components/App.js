@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { useState } from 'react';
 import Settings from './Settings';
 import Times from './Times';
 import Controller from './Controller';
@@ -10,8 +9,19 @@ import Dashboard from './Dashboard/Dashboard';
 import Preferences from './Preferences/Preferences';
 import {BrowserRouter, Route, Switch } from 'react-router-dom';
 import Login from './Login/Login';
+import useToken from './useToken';
 
-export default class App extends Component {
+
+function injectToken(Component) {
+  const InjectedTokens = function (props) {
+    const token = useToken(props);
+    return <Component {...props} token={token} />;
+  };
+  return InjectedTokens;
+}
+
+
+class App extends Component {
   constructor(props) {
     super(props);
 
@@ -24,6 +34,7 @@ export default class App extends Component {
       timeLeftInSecond: Number.parseInt(this.props.defaultSessionLength, 10) * 60,
       isStart: false,
       timerInterval: null
+      /*token: undefined*/
 }
 
     this.onIncreaseBreak = this.onIncreaseBreak.bind(this);
@@ -34,6 +45,7 @@ export default class App extends Component {
     this.onStartStop = this.onStartStop.bind(this);
     this.decreaseTimer = this.decreaseTimer.bind(this);
     this.phaseControl = this.phaseControl.bind(this);
+    
   }
 
      onIncreaseBreak() {
@@ -129,19 +141,18 @@ export default class App extends Component {
       }
     }
   }
-
-  const [token, setToken] = useState();
   
-  if (!token) {
-    return <Login setToken={setToken} />
-  }
-
    render() {
+    const { token, setToken } = this.props.token;
+     
+    if (!token) {
+      return <Login setToken={setToken} />
+     }
     
+      
     return (
       
-   
-      <div className="pomodoro-clock">
+       <div className="pomodoro-clock">
 
         <div className = "wrapper">
           
@@ -230,3 +241,5 @@ export default class App extends Component {
     );
   }
 }
+
+export default injectToken(App);
