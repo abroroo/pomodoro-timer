@@ -5,6 +5,8 @@ import Controller from './Controller';
 import './styles/App.css';
 import ToDoList from "./ToDoList";
 import { MdTimer } from "react-icons/md";
+import LoginButton from "./login.js";
+import LogoutButton from "./logout.js";
 
 export default class App extends Component {
   constructor(props) {
@@ -133,6 +135,8 @@ export default class App extends Component {
         <div className="pomodoro-clock-header">
           <h1 className="pomodoro-clock-header-name">
            Pomodor<MdTimer className="timer-icon" />
+           <LoginButton />
+           <LogoutButton />
           </h1>
         </div>
         <div className="container">
